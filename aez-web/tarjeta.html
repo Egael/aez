@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | AEZ</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <style>
+    .tarjeta-wrapper {
+      display: flex;
+      justify-content: center;
+      padding: 3rem 1rem 6rem;
+      background: #f0f0f0;
+    }
+
+    .tarjeta-wrapper .container {
+      background-color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 480px;
+      border-radius: 25px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .profile-background {
+      height: 200px;
+      background-image: url('img/portada.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .social-links-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 20px 5px 40px;
+    margin-top: 10px;
+    }
+
+    .profile-image {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    display: block;
+    margin: -70px auto 0 auto;
+    }
+
+    .profile-name {
+      margin-top: 20px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .profile-title {
+      margin-top: 10px;
+      font-size: 16px;
+      color: #777;
+    }
+
+    .profile-badges img,
+    .social-icon,
+    .additional-icon {
+      width: 48px;
+      height: 48px;
+    }
+
+    .save-contact-button,
+    .catalog-button {
+      display: inline-block;
+      background-color: #C62828;
+      color: #fff;
+      border-radius: 30px;
+      padding: 10px 30px;
+      font-size: 16px;
+      margin: 10px;
+      text-decoration: none;
+    }
+
+    .social-icons-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<section class="tarjeta-wrapper">
+
+  <div class="container">
+    <div class="profile-background"></div>
+
+    <img src="img/Perfil.png"
+         class="profile-image">
+
+    <h1 class="profile-name">Jacobo Sánchez</h1>
+    <p class="profile-title">Somos una empresa de la iniciativa privada, enfocada en apoyar a las organizaciones de manera INTEGRAL, para mejorar el sistema productivo y con ello ser más eficientes y competitivos</p>
+
+    <div class="profile-badges">
+      <a href="tel:4921566252"><img src="https://cdn-icons-png.flaticon.com/128/12887/12887934.png"></a>
+      <a href="mailto:jacobos@cambiosmx.com.mx"><img src="https://cdn-icons-png.flaticon.com/128/80/80599.png"></a>
+    </div>
+
+    <a href="#" id="guardarContactoBtn" class="save-contact-button">Guardar contacto</a>
+
+    <div class="social-links-container">
+  <div class="social-icons-row">
+    <a href="https://www.whatsapp.com/channel/0029VaX5Tf47oQhbdiR4IG01">
+      <img class="social-icon" src="https://cdn-icons-png.flaticon.com/128/3670/3670051.png">
+    </a>
+    <a href="https://www.instagram.com/aezacatecas/">
+      <img class="social-icon" src="https://cdn-icons-png.flaticon.com/128/4494/4494488.png">
+    </a>
+    <a href="https://www.facebook.com/profile.php?id=100092724158108">
+      <img class="social-icon" src="https://cdn-icons-png.flaticon.com/128/5968/5968764.png">
+    </a>
+  </div>
+
+</section>
+
+<nav class="bottom-nav">
+  <a href="index.html">Inicio</a>
+  <a href="servicios.html">Servicios</a>
+  <a href="alianzas.html">Alianzas</a>
+  <a href="tarjeta.html">Contacto</a>
+</nav>
+
+<script>
+document.getElementById('guardarContactoBtn').onclick = () => {
+  alert('Función de guardado lista para producción');
+};
+</script>
+
+</body>
+</html>
