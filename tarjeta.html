@@ -135,9 +135,38 @@
 </nav>
 
 <script>
-document.getElementById('guardarContactoBtn').onclick = () => {
-  alert('Función de guardado lista para producción');
-};
+document.getElementById("guardarContactoBtn").addEventListener("click", function () {
+  const nombre = "Jacobo";
+  const apellido = "Sánchez";
+  const empresa = "Asesoría Empresarial de Zacatecas";
+  const telefono = "+524921566252";
+  const correo = "jacobos@cambiosmx.com.mx";
+  const puesto = "Asesor Empresarial";
+
+  const vcard = `
+BEGIN:VCARD
+VERSION:3.0
+N:${apellido};${nombre}
+FN:${nombre} ${apellido}
+ORG:${empresa}
+TITLE:${puesto}
+TEL;TYPE=CELL:${telefono}
+EMAIL:${correo}
+END:VCARD
+`;
+
+  const blob = new Blob([vcard], { type: "text/vcard" });
+  const url = URL.createObjectURL(blob);
+
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = `${nombre}_${apellido}.vcf`;
+  document.body.appendChild(a);
+  a.click();
+
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+});
 </script>
 
 </body>
